@@ -15,6 +15,7 @@
 		7E4A31C71CE5CD7200D74D4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E4A31C51CE5CD7200D74D4E /* LaunchScreen.storyboard */; };
 		7E4A31D21CE5CD7200D74D4E /* NavigationBar_OCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4A31D11CE5CD7200D74D4E /* NavigationBar_OCTests.m */; };
 		7E4A31DD1CE5CD7200D74D4E /* NavigationBar_OCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4A31DC1CE5CD7200D74D4E /* NavigationBar_OCUITests.m */; };
+		7E4A31EC1CE5CE2500D74D4E /* DViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4A31EB1CE5CE2500D74D4E /* DViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		7E4A31D81CE5CD7200D74D4E /* NavigationBar_OCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavigationBar_OCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E4A31DC1CE5CD7200D74D4E /* NavigationBar_OCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationBar_OCUITests.m; sourceTree = "<group>"; };
 		7E4A31DE1CE5CD7200D74D4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E4A31EA1CE5CE2500D74D4E /* DViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DViewController.h; sourceTree = "<group>"; };
+		7E4A31EB1CE5CE2500D74D4E /* DViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +109,8 @@
 				7E4A31BD1CE5CD7200D74D4E /* ViewController.h */,
 				7E4A31BE1CE5CD7200D74D4E /* ViewController.m */,
 				7E4A31C01CE5CD7200D74D4E /* Main.storyboard */,
+				7E4A31EA1CE5CE2500D74D4E /* DViewController.h */,
+				7E4A31EB1CE5CE2500D74D4E /* DViewController.m */,
 				7E4A31C31CE5CD7200D74D4E /* Assets.xcassets */,
 				7E4A31C51CE5CD7200D74D4E /* LaunchScreen.storyboard */,
 				7E4A31C81CE5CD7200D74D4E /* Info.plist */,
@@ -207,6 +212,7 @@
 				TargetAttributes = {
 					7E4A31B31CE5CD7200D74D4E = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = P9R9XE7PNB;
 					};
 					7E4A31CC1CE5CD7200D74D4E = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -273,6 +279,7 @@
 				7E4A31BF1CE5CD7200D74D4E /* ViewController.m in Sources */,
 				7E4A31BC1CE5CD7200D74D4E /* AppDelegate.m in Sources */,
 				7E4A31B91CE5CD7200D74D4E /* main.m in Sources */,
+				7E4A31EC1CE5CE2500D74D4E /* DViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,10 +420,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = NavigationBar_OC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.huangteng.NavigationBar-OC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -424,10 +434,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = NavigationBar_OC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.huangteng.NavigationBar-OC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
